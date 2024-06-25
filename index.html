@@ -40,12 +40,13 @@
          <a href="#"><img src="" alt="Meus favoritos"></a>
 
       </ul>
-      <img src="" alt=
+      <img src="" alt=>
     </div>
     <div class="container">
-    <a href="#">img src=" " alt="Meus Favoritos" class="container"</a>
-    <a href="#">img src=</a>
-    <
+      <a href="#"><img src="./img/Vector.png" alt="Meus favoritos" class="container-imagem"></a>
+      <a href="#"><img src="./img/Sacola.png" alt="Carrinhos de compras" class="container-imagem"></a>
+      <a href="#"><img src="./img/Vector (1).png" alt="Meu perfil" class="container-imagem"></a>
+    </div>
     </div>
   </header>
 
@@ -57,9 +58,36 @@
 
     <section class="carrossel">
       <h2 class="carrossel-titulo">Novos lançamentos</h2>
-    </section>
+      <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+   <div class="swiper-pagination"></div>
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    ...
+  </div>
+  <!-- If we need pagination -->
   
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+</div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
-  
-  </html>
+  <script>
+    const swiper = new Swiper('.swiper', {
+    speed: 10,
+    spaceBetween: 3,
+    pagination: {
+    el: '.swiper-pagination',
+    type:'bullets'
+  },
+    });
+    </script>
+    </body>
